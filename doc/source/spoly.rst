@@ -1,7 +1,15 @@
 spoly package
 =============
 
-.. automodule:: spoly.spoly
+.. automodule:: spoly
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+spoly.poly
+----------
+
+.. automodule:: spoly.poly
    :members:
    :undoc-members:
    :show-inheritance:
