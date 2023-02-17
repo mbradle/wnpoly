@@ -3,5 +3,5 @@ Documentation
 
 .. toctree::
 
-   spoly
+   wnpoly
 
