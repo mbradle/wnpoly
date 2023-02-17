@@ -1,6 +1,8 @@
 Overview
 ========
 
+**This module is under development.**
+
 The module computes various symmetric homogeneous polynomials.
 
 Installation
