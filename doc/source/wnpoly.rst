@@ -6,16 +6,16 @@ wnpoly package
    :undoc-members:
    :show-inheritance:
 
-spoly.symm
-----------
+wnpoly.symm
+-----------
 
 .. automodule:: wnpoly.symm
    :members:
    :undoc-members:
    :show-inheritance:
 
-spoly.bell
-----------
+wnpoly.bell
+-----------
 
 .. automodule:: wnpoly.bell
    :members:

@@ -1,7 +1,7 @@
 .. _installation:
 
-Installing spoly
-================
+Installing wnpoly
+=================
 
 First ensure that you have `pip <https://pip.pypa.io/en/stable/>`_
 installed on your system by typing (at the command line prompt $)::
@@ -13,26 +13,26 @@ install pip according to the instructions at the
 pip `website <https://pip.pypa.io/en/stable/>`_.  Note that with python
 version 3, you may have `pip3` instead of `pip`.
 
-With pip installed, you may now use it to install spoly by typing::
+With pip installed, you may now use it to install wnpoly by typing::
 
-      $ pip install spoly
+      $ pip install wnpoly
 
 If the installation fails, you may need to install with root privileges using
 `sudo`::
 
-      $ sudo pip install spoly
+      $ sudo pip install wnpoly
 
 Alternatively, you can just install for yourself with the ``--user`` option::
 
-      $ pip install spoly --user
+      $ pip install wnpoly --user
 
-If you have previously installed spoly and want to upgrade, type::
+If you have previously installed wnpoly and want to upgrade, type::
 
-      $ pip install --upgrade spoly
+      $ pip install --upgrade wnpoly
 
-To test that spoly has installed correctly, type::
+To test that wnpoly has installed correctly, type::
 
-      $ pip show spoly
+      $ pip show wnpoly
 
 which should return information about the package.  To check that the
 package is in place, open python by typing::
@@ -43,9 +43,9 @@ or, perhaps for version 3::
 
       $ python3
 
-and try importing spoly by typing at the python prompt:
+and try importing wnpoly by typing at the python prompt:
 
-     >>> import spoly
+     >>> import wnpoly
 
 This command should simply return.  Of course, to exit python,
 type::
