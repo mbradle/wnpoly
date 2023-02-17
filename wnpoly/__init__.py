@@ -2,4 +2,5 @@
 A package to handle symmetric polynomials.
 """
 
-from spoly.poly import *
+from wnpoly.symm import *
+from wnpoly.bell import *

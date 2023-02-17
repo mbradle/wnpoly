@@ -3,21 +3,21 @@ Overview
 
 **This module is under development.**
 
-The module computes various symmetric homogeneous polynomials.
+The module computes various polynomials useful for `webnucleo <https://webnucleo.readthedocs.io>`_ projects.
 
 Installation
 ------------
 
-Install from `PyPI <https://pypi.org/project/spoly>`_ with pip by
+Install from `PyPI <https://pypi.org/project/wnpoly>`_ with pip by
 typing in your favorite terminal::
 
-    $ pip install spoly
+    $ pip install wnpoly
 
 Usage
 -----
 
 To learn how to use the package, follow the
-`tutorials <http://spoly.readthedocs.io/en/latest/tutorials.html>`_.
+`tutorials <http://wnpoly.readthedocs.io/en/latest/tutorials.html>`_.
 
 Authors
 -------
@@ -28,8 +28,8 @@ Authors
 Contribute
 ----------
 
-- Issue Tracker: `<https://github.com/mbradle/spoly/issues/>`_
-- Source Code: `<https://github.com/mbradle/spoly/>`_
+- Issue Tracker: `<https://github.com/mbradle/wnpoly/issues/>`_
+- Source Code: `<https://github.com/mbradle/wnpoly/>`_
 
 License
 -------
@@ -39,5 +39,5 @@ The project is licensed under the GNU Public License v3 (or later).
 Documentation
 -------------
 
-The project documentation is available at `<https://spoly.readthedocs.io>`_.
+The project documentation is available at `<https://wnpoly.readthedocs.io>`_.
 
