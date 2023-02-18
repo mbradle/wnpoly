@@ -109,7 +109,7 @@ class power_sum:
             ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.
 
         Returns:
-            A :obj:`numpy.array` containing the complete homogeneous symmetric polynomials.
+            A :obj:`numpy.array` containing the power sum symmetric polynomials up to order `n`.
 
         """
         assert n >= 0
@@ -134,7 +134,7 @@ class power_sum:
             ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.
 
         Returns:
-            A :obj:`numpy.array` containing the complete homogeneous symmetric polynomials normalized by the number of terms in the polynomial.
+            A :obj:`numpy.array` containing the power sum polynomials up to order `n` normalized by the number of terms in the polynomial.
 
         """
         result = self.compute(x, n)
