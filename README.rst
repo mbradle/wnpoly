@@ -16,8 +16,8 @@ typing in your favorite terminal::
 Usage
 -----
 
-To learn how to use the package, follow the
-`tutorials <http://wnpoly.readthedocs.io/en/latest/tutorials.html>`_.
+To learn how to use the package, follow the Jupyter notebook
+`tutorial <https://github.com/mbradle/wnpoly/blob/main/tutorial/>`_.
 
 Authors
 -------
