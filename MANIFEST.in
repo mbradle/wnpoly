@@ -8,4 +8,4 @@ include LICENSE.txt
 #recursive-include data *
 
 # Exclude tutorial from the build
-exclude tutorial
+exclude tutorial/
