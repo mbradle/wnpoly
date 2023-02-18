@@ -59,6 +59,8 @@ class partial_bell:
 
         """
 
+        assert x[0] == 0
+
         b = np.zeros([len(x), len(x)])
         b[0, 0] = 1
 

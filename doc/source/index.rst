@@ -16,7 +16,6 @@ Contents
    readme
    changelog
    documentation
-   tutorials
    acknowledgments
 
 
