@@ -44,23 +44,6 @@ class bell:
             x = np.append(x, sum)
         return x
 
-    def negate(self, b):
-        """Method to negate Bell polynomials, that is, to find the corresponding Bell polynomials with negative x's from the input ones.
-
-        Args:
-            ``b`` (:obj:`list` or :obj:`numpy.array`): An array containing the Bell polynomials.
-
-        Returns:
-            A :obj:`numpy.array` containing the negated polynomials.
-
-        """
-        bn = np.array([1])
-        for n in range(1, len(b)):
-            bn = np.append(bn, 0)
-            for i in range(n):
-                bn[n] -= sc.binom(n, i) * bn[i] * b[n - i]
-        return bn
-
 
 class partial_bell:
     """A class for partial Bell polynomials."""

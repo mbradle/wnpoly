@@ -22,11 +22,3 @@ wnpoly.bell
    :undoc-members:
    :show-inheritance:
 
-wnpoly.bernoulli
-----------------
-
-.. automodule:: wnpoly.bernoulli
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
