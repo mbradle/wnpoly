@@ -46,7 +46,7 @@ class elementary:
         """
         result = self.compute(x, n)
         for i in range(len(result)):
-            result[i] /= sc.binom(len(x), i)
+            result[i] /= sc.binom(len(x) - 1, i)
         return result
 
 
@@ -70,12 +70,12 @@ class complete:
         y = x.copy()
 
         for i in range(1, n + 1):
+            result = np.append(result, sum(y))
             for j in range(len(y)):
                 my_sum = 0
                 for k in range(j, len(y)):
                     my_sum += x[j] * y[k]
                 y[j] = my_sum
-            result = np.append(result, sum(y))
 
         return result
 
@@ -93,7 +93,7 @@ class complete:
         """
         result = self.compute(x, n)
         for i in range(len(result)):
-            result[i] /= sc.binom(i + len(x) - 1, i)
+            result[i] /= sc.binom(i + len(x) - 2, i)
         return result
 
 
@@ -117,11 +117,11 @@ class power_sum:
         y = x.copy()
 
         for i in range(1, n + 1):
+            result = np.append(result, sum(y))
             my_sum = 0
             for j in range(len(y)):
                 y[j] *= x[j]
 
-            result = np.append(result, sum(y))
 
         return result
 
@@ -138,4 +138,6 @@ class power_sum:
 
         """
         result = self.compute(x, n)
-        return np.array(result) / len(x)
+        for i in range(1, len(result)):
+            result[i] /= (len(x) - 1)
+        return result
