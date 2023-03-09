@@ -23,7 +23,7 @@ class elementary:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(1, n + 1):
+        for i in range(1, n):
             result = np.append(result, sum(y))
             for j in range(len(y)):
                 y[j] = 0
@@ -46,7 +46,7 @@ class elementary:
         """
         result = self.compute(x, n)
         for i in range(len(result)):
-            result[i] /= sc.binom(len(x) - 1, i)
+            result[i] /= sc.binom(len(x), i)
         return result
 
 
@@ -93,7 +93,7 @@ class complete:
         """
         result = self.compute(x, n)
         for i in range(len(result)):
-            result[i] /= sc.binom(i + len(x) - 2, i)
+            result[i] /= sc.binom(i + len(x) - 1, i)
         return result
 
 

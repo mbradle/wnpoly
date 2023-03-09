@@ -9,6 +9,8 @@ Version 1.1.0
 
 Fix:
 
+  * Fix normalizations.
+
   * Add some package installs to the tutorial for better functioning with Binder.
   * Update to beta status.
 
