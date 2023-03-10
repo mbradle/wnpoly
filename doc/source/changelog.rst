@@ -9,10 +9,12 @@ Version 1.1.0
 
 Fix:
 
-  * Fix normalizations.
+  * Some symmetric polynomial normalizations have been fixed.
 
-  * Add some package installs to the tutorial for better functioning with Binder.
-  * Update to beta status.
+  * Some package installs have been adde to the tutorial for better functioning
+    with Binder.
+
+  * The package has been updated to beta status.
 
 Version 1.0.0
 -------------
