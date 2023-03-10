@@ -1,6 +1,6 @@
 """
-A package to handle symmetric polynomials.
+A package to handle webnucleo polynomials.
 """
 
-from wnpoly.symm import *
-from wnpoly.bell import *
+import wnpoly.symm
+import wnpoly.bell

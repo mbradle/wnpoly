@@ -23,7 +23,7 @@ class elementary:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(1, n):
+        for i in range(1, n+1):
             result = np.append(result, sum(y))
             for j in range(len(y)):
                 y[j] = 0
