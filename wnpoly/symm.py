@@ -23,7 +23,7 @@ class elementary:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(1, n+1):
+        for i in range(n):
             result = np.append(result, sum(y))
             for j in range(len(y)):
                 y[j] = 0
@@ -69,7 +69,7 @@ class complete:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(1, n + 1):
+        for i in range(n):
             result = np.append(result, sum(y))
             for j in range(len(y)):
                 my_sum = 0
@@ -116,7 +116,7 @@ class power_sum:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(1, n + 1):
+        for i in range(n):
             result = np.append(result, sum(y))
             my_sum = 0
             for j in range(len(y)):
@@ -139,5 +139,5 @@ class power_sum:
         """
         result = self.compute(x, n)
         for i in range(1, len(result)):
-            result[i] /= (len(x) - 1)
+            result[i] /= (len(x))
         return result

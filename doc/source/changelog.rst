@@ -13,6 +13,10 @@ Fix:
 
   * The package has been updated to stable status.
 
+Internal:
+
+  * The computation of the symmetric polynomials from input has been simplified.
+
 Version 1.1.0
 -------------
 
