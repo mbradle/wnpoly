@@ -4,18 +4,12 @@ Changelog
 All notable changes to this project will be documented in this file.  This
 project adheres to `Semantic Versioning <http://semver.org/spec/v2.0.0.html>`_.
 
-Version 1.2.0
+Version 1.3.0
 -------------
 
 Fix:
 
-  * Some typos have been fixed.
-
-  * The package has been updated to stable status.
-
-Internal:
-
-  * The computation of the symmetric polynomials from input has been simplified.
+  * Class names are now capitalized in keeping with Webnucleo standards.
 
 Version 1.1.0
 -------------

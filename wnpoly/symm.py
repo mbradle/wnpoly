@@ -4,7 +4,7 @@ import numpy as np
 import scipy.special as sc
 
 
-class elementary:
+class Elementary:
     """A class for elementary homogeneous symmetric polynomials."""
 
     def compute(self, x, n):
@@ -50,7 +50,7 @@ class elementary:
         return result
 
 
-class complete:
+class Complete:
     """A class for complete homogeneous symmetric polynomials."""
 
     def compute(self, x, n):
@@ -97,7 +97,7 @@ class complete:
         return result
 
 
-class power_sum:
+class Power_Sum:
     """A class for power sum polynomials."""
 
     def compute(self, x, n):

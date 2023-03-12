@@ -4,7 +4,7 @@ import numpy as np
 import scipy.special as sc
 
 
-class bell:
+class Bell:
     """A class for complete Bell polynomials."""
 
     def compute(self, x):
@@ -45,7 +45,7 @@ class bell:
         return x
 
 
-class partial_bell:
+class Partial_Bell:
     """A class for partial Bell polynomials."""
 
     def compute(self, x):
