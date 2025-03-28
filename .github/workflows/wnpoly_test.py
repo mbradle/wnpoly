@@ -87,3 +87,15 @@ def test_partial_bell():
         for k in range(0, n+1):
             bn += pbc[n, k]
         assert math.isclose(bc[n], bn, abs_tol=0.0001)
+
+def test_partial_bell_invert():
+    my_partial_bell = wp.bell.PartialBell()
+    n = 5
+    x = np.random.default_rng().uniform(low=1, high=10, size=n)
+    x = np.insert(x, 0, 0.)
+    pbc = my_partial_bell.compute(x)
+
+    xc = my_partial_bell.invert(pbc)
+
+    for n in range(len(x)):
+        assert math.isclose(x[n], xc[n], abs_tol=0.0001)

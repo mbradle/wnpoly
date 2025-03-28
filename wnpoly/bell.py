@@ -76,3 +76,25 @@ class PartialBell:
                     b[n, k] += sc.binom(n - 1, i - 1) * x[i] * b[n - i, k - 1]
 
         return b
+
+    def invert(self, pb):
+        """Method to invert the partial Bell polynomials, that is, to find the x elements \
+        that will give the input Bell polynomials.
+
+        Args:
+            ``pb`` (:obj:`numpy.array`): A 2-d array giving the partial Bell \
+             polynomials B\\ :sub:`n,k`
+
+        Returns:
+            A :obj:`numpy.array` containing the input *x* values that give the input \
+            partial Bell polynomials.
+
+        """
+
+        x = np.zeros(pb.shape[0])
+        x[0] = 0
+
+        for n in range(1, len(x)):
+            x[n] = pb[n, 1]
+
+        return x
