@@ -4,6 +4,20 @@ Changelog
 All notable changes to this project will be documented in this file.  This
 project adheres to `Semantic Versioning <http://semver.org/spec/v2.0.0.html>`_.
 
+Version 2.0.0
+-------------
+
+New:
+
+  * Normalization degree has been added to the complete homogeneous symmetric polynomials.
+
+  * Tests have been added to the workflow.
+
+Fix:
+
+  * The power sum and partial Bell polynomial classes have been renamed to
+  conform to Python standards.  This is a backwards-incompatible change.
+
 Version 1.3.0
 -------------
 
