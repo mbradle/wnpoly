@@ -11,19 +11,21 @@ class Elementary:
         """Method to compute elementary homogeneous symmetric polynomials.
 
         Args:
-            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which to compute the polynomials.
+            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which \
+            to compute the polynomials.
 
-            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.  The value must be less than or equal to the length of the input array.
+            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the \
+            polynomials.  The value must be less than or equal to the length of the input array.
 
         Returns:
             A :obj:`numpy.array` containing the elementary homogeneous symmetric polynomials.
 
         """
-        assert n <= len(x) and n >= 0
+        assert 0 <= n <= len(x)
         result = np.array([1])
         y = x.copy()
 
-        for i in range(n):
+        for _ in range(n):
             result = np.append(result, sum(y))
             for j in range(len(y)):
                 y[j] = 0
@@ -36,12 +38,15 @@ class Elementary:
         """Method to compute normalized elementary homogeneous symmetric polynomials.
 
         Args:
-            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which to compute the polynomials.
+            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements \
+            from which to compute the polynomials.
 
-            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.  The value must be less than or equal to the length of the input array.
+            `n`` (:obj:`int`): A non-negative integer giving the order to which to compute \
+            the polynomials.  The value must be less than or equal to the length of the input array.
 
         Returns:
-            A :obj:`numpy.array` containing the elementary homogeneous symmetric polynomials normalized by the number of terms in each polynomial.
+            A :obj:`numpy.array` containing the elementary homogeneous symmetric polynomials \
+            normalized by the number of terms in each polynomial.
 
         """
         result = self.compute(x, n)
@@ -57,9 +62,11 @@ class Complete:
         """Method to compute complete homogeneous symmetric polynomials.
 
         Args:
-            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which to compute the polynomials.
+            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which \
+            to compute the polynomials.
 
-            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.
+            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute \
+            the polynomials.
 
         Returns:
             A :obj:`numpy.array` containing the complete homogeneous symmetric polynomials.
@@ -69,7 +76,7 @@ class Complete:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(n):
+        for _ in range(n):
             result = np.append(result, sum(y))
             for j in range(len(y)):
                 my_sum = 0
@@ -79,34 +86,44 @@ class Complete:
 
         return result
 
-    def compute_normalized(self, x, n):
+    def compute_normalized(self, x, n, m=0):
         """Method to compute normalized complete homogeneous symmetric polynomials.
 
         Args:
-            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which to compute the polynomials.
+            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which \
+            to compute the polynomials.
 
-            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.
+            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute \
+            the polynomials.
+
+            ``m`` (:obj:`int`, optional): A non-negative integer giving the normalization degree.  \
+            This must be less than the length of *x*.
 
         Returns:
-            A :obj:`numpy.array` containing the complete homogeneous symmetric polynomials normalized by the number of terms in the polynomial.
+            A :obj:`numpy.array` containing the complete homogeneous symmetric polynomials \
+            normalized by the number of terms in the polynomial.
 
         """
+        assert len(x) > 0
+        assert m <= len(x)
         result = self.compute(x, n)
         for i in range(len(result)):
-            result[i] /= sc.binom(i + len(x) - 1, i)
+            result[i] /= sc.binom(i + len(x) - m - 1, i)
         return result
 
 
-class Power_Sum:
+class PowerSum:
     """A class for power sum polynomials."""
 
     def compute(self, x, n):
         """Method to compute power sum symmetric polynomials.
 
         Args:
-            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which to compute the polynomials.
+            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which \
+            to compute the polynomials.
 
-            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.
+            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the \
+            polynomials.
 
         Returns:
             A :obj:`numpy.array` containing the power sum symmetric polynomials up to order `n`.
@@ -116,12 +133,10 @@ class Power_Sum:
         result = np.array([1])
         y = x.copy()
 
-        for i in range(n):
+        for _ in range(n):
             result = np.append(result, sum(y))
-            my_sum = 0
             for j in range(len(y)):
                 y[j] *= x[j]
-
 
         return result
 
@@ -129,15 +144,18 @@ class Power_Sum:
         """Method to compute normalized power sum symmetric polynomials.
 
         Args:
-            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which to compute the polynomials.
+            ``x`` (:obj:`list` or :obj:`numpy.array`): An array containing the elements from which \
+            to compute the polynomials.
 
-            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute the polynomials.
+            ``n`` (:obj:`int`): A non-negative integer giving the order to which to compute \
+            the polynomials.
 
         Returns:
-            A :obj:`numpy.array` containing the power sum polynomials up to order `n` normalized by the number of terms in the polynomial.
+            A :obj:`numpy.array` containing the power sum polynomials up to order `n` normalized \
+            by the number of terms in the polynomial.
 
         """
         result = self.compute(x, n)
         for i in range(1, len(result)):
-            result[i] /= (len(x))
+            result[i] /= len(x)
         return result
