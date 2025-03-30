@@ -44,8 +44,8 @@ Documentation
 
 The project documentation is available at `<https://wnpoly.readthedocs.io>`_.
 
-.. |pypi| image:: https://badge.fury.io/py/wnnet.svg 
-    :target: https://badge.fury.io/py/wnnet
+.. |pypi| image:: https://badge.fury.io/py/wnpoly.svg 
+    :target: https://badge.fury.io/py/wnpoly
 .. |license| image:: https://img.shields.io/github/license/mbradle/wnpoly
     :alt: GitHub
 .. |doc_stat| image:: https://readthedocs.org/projects/wnpoly/badge/?version=latest 
