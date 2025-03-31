@@ -1,7 +1,7 @@
 Overview
 ========
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.15113409.svg
+.. image:: https://zenodo.org/badge/603141720.svg
   :target: https://doi.org/10.5281/zenodo.15113409
 
 The module computes various polynomials useful for `webnucleo <https://webnucleo.readthedocs.io>`_ projects.  In particular, the package has modules to compute symmetric and Bell polynomials for input sets of variables.  For the complete Bell polynomials, the package also has a routine to invert an appropriate set of Bell polynomials to find the variables that would give rise to those polynomials.
