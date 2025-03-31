@@ -4,6 +4,13 @@ Changelog
 All notable changes to this project will be documented in this file.  This
 project adheres to `Semantic Versioning <http://semver.org/spec/v2.0.0.html>`_.
 
+Version 2.0.1
+-------------
+
+Fix:
+
+  * A missing configuration has been added.
+
 Version 2.0.0
 -------------
 
@@ -15,8 +22,7 @@ New:
 
 Fix:
 
-  * The power sum and partial Bell polynomial classes have been renamed to
-  conform to Python standards.  This is a backwards-incompatible change.
+  * The power sum and partial Bell polynomial classes have been renamed to conform to Python standards.  This is a backwards-incompatible change.
 
 Version 1.3.0
 -------------
