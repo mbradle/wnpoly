@@ -14,6 +14,6 @@ __title__ = "wnpoly"
 __summary__ = (
     "Python project to compute polynomials useful for Webnucleo projects"
 )
-__version__ = "2.0.1"
+__version__ = "2.0.2"
 __author__ = "Clemson University"
 __copyright__ = "Clemson University, 2023-2025"
