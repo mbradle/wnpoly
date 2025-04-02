@@ -7,6 +7,10 @@ project adheres to `Semantic Versioning <http://semver.org/spec/v2.0.0.html>`_.
 Version 2.0.2
 -------------
 
+New:
+
+  * The tutorial notebook now uses f-strings for output.
+
 Fix:
 
   * The Zenodo DOI has been updated.
